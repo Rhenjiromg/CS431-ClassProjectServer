@@ -1,0 +1,372 @@
+{
+    "tables": [
+      {
+        "name": "accounts",
+        "fields": {
+            "username": "VARCHAR(255) NOT NULL",
+            "password": "VARCHAR(255) NOT NULL",
+            "first_name": "VARCHAR(255)",
+            "last_name": "VARCHAR(255)",
+            "email": "VARCHAR(255)"
+        },
+        "data": [
+            { "username": "adam_clark11", "first_name": "Adam", "last_name": "Clark", "password": "securePass11", "email": "adam.clark11@example.com" },
+            { "username": "nora_adams12", "first_name": "Nora", "last_name": "Adams", "password": "securePass12", "email": "nora.adams12@example.com" },
+            { "username": "oliver_hall13", "first_name": "Oliver", "last_name": "Hall", "password": "securePass13", "email": "oliver.hall13@example.com" },
+            { "username": "emma_thomas14", "first_name": "Emma", "last_name": "Thomas", "password": "securePass14", "email": "emma.thomas14@example.com" },
+            { "username": "liam_lee15", "first_name": "Liam", "last_name": "Lee", "password": "securePass15", "email": "liam.lee15@example.com" },
+            { "username": "sophia_evans16", "first_name": "Sophia", "last_name": "Evans", "password": "securePass16", "email": "sophia.evans16@example.com" },
+            { "username": "noah_white17", "first_name": "Noah", "last_name": "White", "password": "securePass17", "email": "noah.white17@example.com" },
+            { "username": "ava_green18", "first_name": "Ava", "last_name": "Green", "password": "securePass18", "email": "ava.green18@example.com" },
+            { "username": "william_brown19", "first_name": "William", "last_name": "Brown", "password": "securePass19", "email": "william.brown19@example.com" },
+            { "username": "mia_scott20", "first_name": "Mia", "last_name": "Scott", "password": "securePass20", "email": "mia.scott20@example.com" },
+            { "username": "user", "first_name": "Rhenjiro", "last_name": "Gunawan", "password": "test1234", "email" : "test@gmail.com"},
+            { "username": "jane_doe23", "first_name": "Jane", "last_name": "Doe", "password": "passwordJane23", "email": "jane.doe23@example.com" },
+            { "username": "mike_harper89", "first_name": "Mike", "last_name": "Harper", "password": "secureMike89", "email": "mike.harper89@example.com" },
+            { "username": "linda_smith01", "first_name": "Linda", "last_name": "Smith", "password": "Linda01Pass", "email": "linda.smith01@example.com" },
+            { "username": "johnny_b123", "first_name": "Johnny", "last_name": "Brown", "password": "JohnnyB123!", "email": "johnny.b123@example.com" },
+            { "username": "susan_lee77", "first_name": "Susan", "last_name": "Lee", "password": "Susan77#", "email": "susan.lee77@example.com" },
+            { "username": "robert_taylor45", "first_name": "Robert", "last_name": "Taylor", "password": "RobertT45$", "email": "robert.taylor45@example.com" },
+            { "username": "emily_davis33", "first_name": "Emily", "last_name": "Davis", "password": "Emily33@", "email": "emily.davis33@example.com" },
+            { "username": "kevin_johnson66", "first_name": "Kevin", "last_name": "Johnson", "password": "KJohn66!", "email": "kevin.johnson66@example.com" },
+            { "username": "amy_martin12", "first_name": "Amy", "last_name": "Martin", "password": "Amy12#", "email": "amy.martin12@example.com" },
+            { "username": "paul_evans90", "first_name": "Paul", "last_name": "Evans", "password": "PaulEvans90$", "email": "paul.evans90@example.com" }
+        ]          
+      },
+      {
+        "name" : "likes",
+        "fields" : {
+            "user_id" : "VARCHAR(255) NOT NULL",
+            "post_id" : "VARCHAR(255) NOT NULL"
+        },
+        "data" : [
+            { "user_id": "adam_clark11", "post_id": "adam_clark112024-11-29 10:00:00" },
+            { "user_id": "nora_adams12", "post_id": "adam_clark112024-11-29 10:00:00" },
+            { "user_id": "oliver_hall13", "post_id": "adam_clark112024-11-29 10:00:00" },
+            { "user_id": "sophia_evans16", "post_id": "adam_clark112024-11-29 10:00:00" },
+            { "user_id": "nora_adams12", "post_id": "nora_adams122024-11-28 11:00:00" },
+            { "user_id": "oliver_hall13", "post_id": "oliver_hall132024-11-27 12:00:00" },
+            { "user_id": "emma_thomas14", "post_id": "emma_thomas142024-11-26 13:00:00" },
+            { "user_id": "liam_lee15", "post_id": "liam_lee152024-11-25 14:00:00" },
+            { "user_id": "sophia_evans16", "post_id": "sophia_evans162024-11-24 15:00:00" },
+            { "user_id": "noah_white17", "post_id": "noah_white172024-11-23 16:00:00" },
+            { "user_id": "jane_doe23", "post_id": "jane_doe232024-11-28 09:30:00" },
+            { "user_id": "mike_harper89", "post_id": "mike_harper892024-11-27 14:45:00" },
+            { "user_id": "linda_smith01", "post_id": "linda_smith012024-11-26 18:15:00" },
+            { "user_id": "johnny_b123", "post_id": "johnny_b1232024-11-25 12:00:00" },
+            { "user_id": "susan_lee77", "post_id": "susan_lee772024-11-24 10:30:00" },
+            { "user_id": "robert_taylor45", "post_id": "robert_taylor452024-11-29 09:00:00" },
+            { "user_id": "emily_davis33", "post_id": "emily_davis332024-11-23 11:45:00" },
+            { "user_id": "kevin_johnson66", "post_id": "kevin_johnson662024-11-22 13:30:00" },
+            { "user_id": "amy_martin12", "post_id": "amy_martin122024-11-21 15:00:00" },
+            { "user_id": "paul_evans90", "post_id": "paul_evans902024-11-20 16:15:00" },
+            { "user_id": "jane_doe23", "post_id": "jane_doe232024-11-29 08:45:00" },
+            { "user_id": "adam_clark11", "post_id": "adam_clark112024-11-28 14:00:00" },
+            { "user_id": "mike_harper89", "post_id": "mike_harper892024-11-27 10:15:00" },
+            { "user_id": "linda_smith01", "post_id": "linda_smith012024-11-26 09:30:00" },
+            { "user_id": "johnny_b123", "post_id": "johnny_b1232024-11-25 11:15:00" },
+            { "user_id": "susan_lee77", "post_id": "susan_lee772024-11-24 13:30:00" },
+            { "user_id": "robert_taylor45", "post_id": "robert_taylor452024-11-23 15:45:00" },
+            { "user_id": "emily_davis33", "post_id": "emily_davis332024-11-22 08:00:00" },
+            { "user_id": "kevin_johnson66", "post_id": "kevin_johnson662024-11-21 09:45:00" },
+            { "user_id": "amy_martin12", "post_id": "amy_martin122024-11-20 14:30:00" },
+            { "user_id": "paul_evans90", "post_id": "paul_evans902024-11-19 10:15:00" },
+            { "user_id": "jane_doe23", "post_id": "jane_doe232024-11-18 16:00:00" },
+            { "user_id": "adam_clark11", "post_id": "adam_clark112024-11-17 14:45:00" },
+            { "user_id": "mike_harper89", "post_id": "mike_harper892024-11-16 09:30:00" },
+            { "user_id": "linda_smith01", "post_id": "linda_smith012024-11-15 10:30:00" },
+            { "user_id": "johnny_b123", "post_id": "johnny_b1232024-11-14 08:00:00" },
+            { "user_id": "susan_lee77", "post_id": "susan_lee772024-11-13 11:15:00" },
+            { "user_id": "robert_taylor45", "post_id": "robert_taylor452024-11-12 15:30:00" },
+            { "user_id": "emily_davis33", "post_id": "emily_davis332024-11-11 13:45:00" },
+            { "user_id": "jane_doe23", "post_id": "jane_doe232024-11-28 09:30:00" },
+            { "user_id": "mike_harper89", "post_id": "mike_harper892024-11-27 14:45:00" },
+            { "user_id": "linda_smith01", "post_id": "linda_smith012024-11-26 18:15:00" },
+            { "user_id": "johnny_b123", "post_id": "johnny_b1232024-11-25 12:00:00" },
+            { "user_id": "susan_lee77", "post_id": "susan_lee772024-11-24 10:30:00" },
+            { "user_id": "robert_taylor45", "post_id": "robert_taylor452024-11-29 09:00:00" },
+            { "user_id": "emily_davis33", "post_id": "emily_davis332024-11-23 11:45:00" },
+            { "user_id": "kevin_johnson66", "post_id": "kevin_johnson662024-11-22 13:30:00" },
+            { "user_id": "amy_martin12", "post_id": "amy_martin122024-11-21 15:00:00" },
+            { "user_id": "paul_evans90", "post_id": "paul_evans902024-11-20 16:15:00" },
+            { "user_id": "jane_doe23", "post_id": "jane_doe232024-11-28 09:30:00" },
+            { "user_id": "adam_clark11", "post_id": "adam_clark112024-11-28 14:00:00" },
+            { "user_id": "mike_harper89", "post_id": "mike_harper892024-11-27 10:15:00" },
+            { "user_id": "johnny_b123", "post_id": "johnny_b1232024-11-25 11:15:00" },
+            { "user_id": "kevin_johnson66", "post_id": "kevin_johnson662024-11-22 13:30:00" },
+            { "user_id": "robert_taylor45", "post_id": "robert_taylor452024-11-29 09:00:00" },
+            { "user_id": "susan_lee77", "post_id": "susan_lee772024-11-24 13:30:00" },
+            { "user_id": "johnny_b123", "post_id": "johnny_b1232024-11-25 11:15:00" },
+            { "user_id": "amy_martin12", "post_id": "amy_martin122024-11-21 15:00:00" },
+            { "user_id": "paul_evans90", "post_id": "paul_evans902024-11-20 16:15:00" },
+            { "user_id": "adam_clark11", "post_id": "adam_clark112024-11-17 14:45:00" },
+            { "user_id": "mike_harper89", "post_id": "mike_harper892024-11-16 09:30:00" },
+            { "user_id": "linda_smith01", "post_id": "linda_smith012024-11-15 10:30:00" },
+            { "user_id": "robert_taylor45", "post_id": "robert_taylor452024-11-29 09:00:00" },
+            { "user_id": "johnny_b123", "post_id": "johnny_b1232024-11-25 11:15:00" },
+            { "user_id": "kevin_johnson66", "post_id": "kevin_johnson662024-11-21 09:45:00" },
+            { "user_id": "adam_clark11", "post_id": "adam_clark112024-11-28 14:00:00" }
+        ]
+    },
+    {
+        "name" : "following",
+        "fields" : {
+            "follower_id" : "VARCHAR(255) NOT NULL",
+            "following_id" : "VARCHAR(255) NOT NULL"
+        }, 
+        "data" : [
+            { "follower_id": "adam_clark11", "following_id": "nora_adams12" },
+            { "follower_id": "nora_adams12", "following_id": "oliver_hall13" },
+            { "follower_id": "oliver_hall13", "following_id": "emma_thomas14" },
+            { "follower_id": "emma_thomas14", "following_id": "liam_lee15" },
+            { "follower_id": "liam_lee15", "following_id": "sophia_evans16" },
+            { "follower_id": "sophia_evans16", "following_id": "noah_white17" },
+            { "follower_id": "noah_white17", "following_id": "ava_green18" }
+        ]          
+    },
+    {
+        "name" : "comments",
+        "fields" : {
+            "post_id" : "VARCHAR(255) NOT NULL",
+            "comment_content" : "TEXT NOT NULL",
+            "posted_at" : "DATETIME DEFAULT CURRENT_TIMESTAMP",
+            "poster_id" : "VARCHAR(255) NOT NULL"
+        },
+        "data" : [
+            { "post_id": "adam_clark112024-11-29 10:00:00", "comment_content": "Great insights!", "posted_at": "2024-11-29 10:05:00", "poster_id" : "adam_clark11"},
+            { "post_id": "adam_clark112024-11-29 10:00:00", "comment_content": "Great insights too!!", "posted_at": "2024-11-30 10:05:00", "poster_id" : "adam_clark11"},
+            { "post_id": "nora_adams122024-11-28 11:00:00", "comment_content": "Very helpful!", "posted_at": "2024-11-28 11:15:00", "poster_id" : "nora_adams12" },
+            { "post_id": "oliver_hall132024-11-27 12:00:00", "comment_content": "Interesting post.", "posted_at": "2024-11-27 12:45:00", "poster_id" : "oliver_hall13" }
+]
+
+      },
+      {
+        "name": "posts",
+        "fields": {
+          "id": "VARCHAR(255) NOT NULL",
+          "content": "TEXT NOT NULL",
+          "upload_date": "DATETIME DEFAULT CURRENT_TIMESTAMP",
+          "poster_id": "VARCHAR(255) NOT NULL"
+        },
+        "data":  [
+              {
+                "id": "adam_clark112024-11-29 10:00:00",
+                "content": "Life is short, lets go bungy jumping!",
+                "upload_date": "2024-11-29 10:00:00",
+                "poster_id": "adam_clark11"
+              },
+              {
+                "id": "nora_adams122024-11-28 11:00:00",
+                "content": "Django vs Flask: Which is better?",
+                "upload_date": "2024-11-28 11:00:00",
+                "poster_id": "nora_adams12"
+              },
+              {
+                "id": "oliver_hall132024-11-27 12:00:00",
+                "content": "How to deploy apps with Docker.",
+                "upload_date": "2024-11-27 12:00:00",
+                "poster_id": "oliver_hall13"
+              },
+              {
+                "id": "emma_thomas142024-11-26 13:00:00",
+                "content": "Exploring TypeScript for React.",
+                "upload_date": "2024-11-26 13:00:00",
+                "poster_id": "emma_thomas14"
+              },
+              {
+                "id": "liam_lee152024-11-25 14:00:00",
+                "content": "Best practices for REST API design.",
+                "upload_date": "2024-11-25 14:00:00",
+                "poster_id": "liam_lee15"
+              },
+              {
+                "id": "sophia_evans162024-11-24 15:00:00",
+                "content": "A beginner''s guide to CSS Grid.",
+                "upload_date": "2024-11-24 15:00:00",
+                "poster_id": "sophia_evans16"
+              },
+              {
+                "id": "noah_white172024-11-23 16:00:00",
+                "content": "Understanding JavaScript promises.",
+                "upload_date": "2024-11-23 16:00:00",
+                "poster_id": "noah_white17"
+              },
+              {
+                "id": "jane_doe232024-11-28 09:30:00",
+                "content": "Exploring JavaScript ES6 features.",
+                "upload_date": "2024-11-28 09:30:00",
+                "poster_id": "jane_doe23"
+              },
+              {
+                "id": "mike_harper892024-11-27 14:45:00",
+                "content": "Tips for optimizing React performance.",
+                "upload_date": "2024-11-27 14:45:00",
+                "poster_id": "mike_harper89"
+              },
+              {
+                "id": "linda_smith012024-11-26 18:15:00",
+                "content": "Introduction to MySQL joins.",
+                "upload_date": "2024-11-26 18:15:00",
+                "poster_id": "linda_smith01"
+              },
+              {
+                "id": "johnny_b1232024-11-25 12:00:00",
+                "content": "Debugging tips for Node.js apps.",
+                "upload_date": "2024-11-25 12:00:00",
+                "poster_id": "johnny_b123"
+              },
+              {
+                "id": "susan_lee772024-11-24 10:30:00",
+                "content": "Using CSS Grid for responsive layouts.",
+                "upload_date": "2024-11-24 10:30:00",
+                "poster_id": "susan_lee77"
+              },
+              {
+                "id": "robert_taylor452024-11-29 09:00:00",
+                "content": "Understanding REST API design.",
+                "upload_date": "2024-11-29 09:00:00",
+                "poster_id": "robert_taylor45"
+              },
+              {
+                "id": "emily_davis332024-11-23 11:45:00",
+                "content": "Setting up authentication in Firebase.",
+                "upload_date": "2024-11-23 11:45:00",
+                "poster_id": "emily_davis33"
+              },
+              {
+                "id": "kevin_johnson662024-11-22 13:30:00",
+                "content": "Exploring Python data classes.",
+                "upload_date": "2024-11-22 13:30:00",
+                "poster_id": "kevin_johnson66"
+              },
+              {
+                "id": "amy_martin122024-11-21 15:00:00",
+                "content": "Implementing infinite scrolling in React.",
+                "upload_date": "2024-11-21 15:00:00",
+                "poster_id": "amy_martin12"
+              },
+              {
+                "id": "paul_evans902024-11-20 16:15:00",
+                "content": "The basics of TypeScript interfaces.",
+                "upload_date": "2024-11-20 16:15:00",
+                "poster_id": "paul_evans90"
+              },
+              {
+                "id": "jane_doe232024-11-29 08:45:00",
+                "content": "Building RESTful APIs with Express.",
+                "upload_date": "2024-11-29 08:45:00",
+                "poster_id": "jane_doe23"
+              },
+              {
+                "id": "adam_clark112024-11-28 14:00:00",
+                "content": "Understanding Python generators.",
+                "upload_date": "2024-11-28 14:00:00",
+                "poster_id": "adam_clark11"
+              },
+              {
+                "id": "mike_harper892024-11-27 10:15:00",
+                "content": "Getting started with MongoDB.",
+                "upload_date": "2024-11-27 10:15:00",
+                "poster_id": "mike_harper89"
+              },
+              {
+                "id": "linda_smith012024-11-26 09:30:00",
+                "content": "Understanding Redux middleware.",
+                "upload_date": "2024-11-26 09:30:00",
+                "poster_id": "linda_smith01"
+              },
+              {
+                "id": "johnny_b1232024-11-25 11:15:00",
+                "content": "Intro to Git and version control.",
+                "upload_date": "2024-11-25 11:15:00",
+                "poster_id": "johnny_b123"
+              },
+              {
+                "id": "susan_lee772024-11-24 13:30:00",
+                "content": "Using useEffect effectively in React.",
+                "upload_date": "2024-11-24 13:30:00",
+                "poster_id": "susan_lee77"
+              },
+              {
+                "id": "robert_taylor452024-11-23 15:45:00",
+                "content": "The basics of GraphQL queries.",
+                "upload_date": "2024-11-23 15:45:00",
+                "poster_id": "robert_taylor45"
+              },
+              {
+                "id": "emily_davis332024-11-22 08:00:00",
+                "content": "Building a carousel with react-slick.",
+                "upload_date": "2024-11-22 08:00:00",
+                "poster_id": "emily_davis33"
+              },
+              {
+                "id": "kevin_johnson662024-11-21 09:45:00",
+                "content": "Understanding JavaScript promises.",
+                "upload_date": "2024-11-21 09:45:00",
+                "poster_id": "kevin_johnson66"
+              },
+              {
+                "id": "amy_martin122024-11-20 14:30:00",
+                "content": "Setting up Webpack for React projects.",
+                "upload_date": "2024-11-20 14:30:00",
+                "poster_id": "amy_martin12"
+              },
+              {
+                "id": "paul_evans902024-11-19 10:15:00",
+                "content": "Introduction to async/await in JavaScript.",
+                "upload_date": "2024-11-19 10:15:00",
+                "poster_id": "paul_evans90"
+              },
+              {
+                "id": "jane_doe232024-11-18 16:00:00",
+                "content": "Exploring Python Flask for web development.",
+                "upload_date": "2024-11-18 16:00:00",
+                "poster_id": "jane_doe23"
+              },
+              {
+                "id": "adam_clark112024-11-17 14:45:00",
+                "content": "Tips for debugging in VS Code.",
+                "upload_date": "2024-11-17 14:45:00",
+                "poster_id": "adam_clark11"
+              },
+              {
+                "id": "mike_harper892024-11-16 09:30:00",
+                "content": "Introduction to Python type hints.",
+                "upload_date": "2024-11-16 09:30:00",
+                "poster_id": "mike_harper89"
+              },
+              {
+                "id": "linda_smith012024-11-15 10:30:00",
+                "content": "Understanding event loops in Node.js.",
+                "upload_date": "2024-11-15 10:30:00",
+                "poster_id": "linda_smith01"
+              },
+              {
+                "id": "johnny_b1232024-11-14 08:00:00",
+                "content": "Getting started with Docker containers.",
+                "upload_date": "2024-11-14 08:00:00",
+                "poster_id": "johnny_b123"
+              },
+              {
+                "id": "susan_lee772024-11-13 11:15:00",
+                "content": "Building REST APIs with Django.",
+                "upload_date": "2024-11-13 11:15:00",
+                "poster_id": "susan_lee77"
+              },
+              {
+                "id": "robert_taylor452024-11-12 15:30:00",
+                "content": "Introduction to testing with Jest.",
+                "upload_date": "2024-11-12 15:30:00",
+                "poster_id": "robert_taylor45"
+              },
+              {
+                "id": "emily_davis332024-11-11 13:45:00",
+                "content": "Setting up CI/CD pipelines with GitHub Actions.",
+                "upload_date": "2024-11-11 13:45:00",
+                "poster_id": "emily_davis33"
+              }
+            ]
+          }
+    ]
+  }
+  
